@@ -2,7 +2,7 @@ local lualine = require('lualine')
 -- Config
 local config = {
   options = {
-    theme = 'gruvbox',
+    theme = 'gruvbox-material',
   },
   sections = {
     -- these are to remove the defaults

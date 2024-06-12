@@ -2,16 +2,7 @@ local lualine = require('lualine')
 -- Config
 local config = {
   options = {
-    -- Disable sections and component separators
-    -- component_separators = '|',
-    -- section_separators = '|',
-    -- theme = 'palenight',
-    -- theme = 'monokai-pro'
-    -- theme = 'dracula-nvim'
-    -- theme = 'nordic'
     theme = 'gruvbox',
-    -- theme = 'tokyonight'
-    -- theme = 'codedark',
   },
   sections = {
     -- these are to remove the defaults

@@ -8,8 +8,8 @@ local config = {
     -- theme = 'palenight',
     -- theme = 'monokai-pro'
     -- theme = 'dracula-nvim'
-    theme = 'nordic'
-    -- theme = 'gruvbox',
+    -- theme = 'nordic'
+    theme = 'gruvbox',
     -- theme = 'tokyonight'
     -- theme = 'codedark',
   },

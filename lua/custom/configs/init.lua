@@ -10,3 +10,4 @@ require("custom.configs.themes")
 
 -- require("custom.configs.nordic")
 vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side column
+require('lspconfig').clangd.setup {}     -- lsp setup for clang?

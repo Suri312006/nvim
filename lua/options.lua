@@ -67,6 +67,8 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this                
 vim.o.termguicolors = true
 
-vim.lsp.inlay_hint.enable(true)
+if vim.lsp.inlay_hint then
+  vim.lsp.inlay_hint.enable(true, { 0 })
+end
 
 -- vim: ts=2 sts=2 sw=2 et

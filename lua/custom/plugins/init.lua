@@ -112,5 +112,10 @@ return {
   -- language
   'othree/html5.vim',
   'pangloss/vim-javascript',
-  "simrat39/rust-tools"
+  {
+	  'mrcjkb/rustaceanvim',
+	  version = '^4',
+	  lazy = false,
+  }
+
 }

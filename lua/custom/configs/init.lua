@@ -7,6 +7,7 @@ require("custom.configs.todo-comments")
 require("custom.configs.refactoring")
 require("custom.configs.vimtex")
 require("custom.configs.themes")
+require("custom.configs.rust-tools")
 
 -- require("custom.configs.nordic")
 vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side column ( major w )
@@ -14,3 +15,6 @@ vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side co
 local lspconfig = require("lspconfig")
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 lspconfig.clangd.setup({ capabilities = lsp_capabilities })
+
+
+

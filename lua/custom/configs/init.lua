@@ -7,7 +7,6 @@ require("custom.configs.todo-comments")
 require("custom.configs.refactoring")
 require("custom.configs.vimtex")
 require("custom.configs.themes")
-require("custom.configs.rust-tools")
 
 -- require("custom.configs.nordic")
 vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side column ( major w )

@@ -112,10 +112,11 @@ return {
   -- language
   'othree/html5.vim',
   'pangloss/vim-javascript',
-  {
-	  'mrcjkb/rustaceanvim',
-	  version = '^4',
-	  lazy = false,
-  }
+  -- not sure if we really need this yet
+  -- {
+	 --  'mrcjkb/rustaceanvim',
+	 --  version = '^4',
+	 --  lazy = false,
+  -- }
 
 }

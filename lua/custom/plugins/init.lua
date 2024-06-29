@@ -20,7 +20,7 @@ return {
     config = true,
     opts = ...
   },
-  -- prine
+  -- Prime
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
@@ -30,6 +30,8 @@ return {
     'evanleck/vim-svelte', branch = 'main'
   },
   "mbbill/undotree",
+
+  -- core
   {
     "NeogitOrg/neogit",
     dependencies = {
@@ -109,14 +111,16 @@ return {
       require('render-markdown').setup({})
     end,
   },
+
+  'nvim-telescope/telescope-ui-select.nvim',
   -- language
   'othree/html5.vim',
   'pangloss/vim-javascript',
   -- not sure if we really need this yet
   -- {
-	 --  'mrcjkb/rustaceanvim',
-	 --  version = '^4',
-	 --  lazy = false,
+  --  'mrcjkb/rustaceanvim',
+  --  version = '^4',
+  --  lazy = false,
   -- }
 
 }

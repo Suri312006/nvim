@@ -8,6 +8,7 @@ require("custom.configs.refactoring")
 require("custom.configs.vimtex")
 require("custom.configs.themes")
 require("custom.configs.telescope-ui-select")
+require("custom.configs.hop")
 
 -- require("custom.configs.nordic")
 vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side column ( major w )

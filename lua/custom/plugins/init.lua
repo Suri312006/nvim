@@ -111,6 +111,14 @@ return {
       require('render-markdown').setup({})
     end,
   },
+  -- for hopping
+  {
+    'smoka7/hop.nvim',
+    version = "*",
+    opts = {
+      keys = 'etovxqpdygfblzhckisuran'
+    }
+  },
 
   'nvim-telescope/telescope-ui-select.nvim',
   -- language

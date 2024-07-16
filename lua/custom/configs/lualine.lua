@@ -9,9 +9,8 @@ local config = {
     theme = 'gruvbox-material',
   },
   sections = {
-    -- these are to remove the defaults
-    lualine_a = { window, --[[ "mode" ]] },
-    lualine_c = {
+    lualine_a = { window, "mode" },
+    lualine_d = {
       {
         'filename',
         file_status = true,

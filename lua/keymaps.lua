@@ -25,6 +25,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+for i = 1, 9 do
+  local lhs = "<leader>" .. i
+  local rhs = i .. "<c-w>w"
+  vim.keymap.set("n", lhs, rhs, { desc = "Move to window " .. i })
+end
+
 
 -- [[Primeagen Keymaps]]
 
@@ -80,8 +86,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- vim.keymap.set("n", "<leader>e", "")
 -- go error
-vim.keymap.set('n', '<leader>ge', 'iif err != nil {\n \n}<Esc> kk i', {noremap = true, silent = true})
+vim.keymap.set('n', '<leader>ge', 'iif err != nil {\n \n}<Esc> kk i', { noremap = true, silent = true })
 --remap window movement
 -- vim.keymap.set("n", "qk", "<C-w>k")
 -- vim: ts=2 sts=2 sw=2 et
-

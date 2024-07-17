@@ -26,7 +26,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 for i = 1, 9 do
-  local lhs = "<leader>" .. i
+  local lhs = "." .. i
   local rhs = i .. "<c-w>w"
   vim.keymap.set("n", lhs, rhs, { desc = "Move to window " .. i })
 end

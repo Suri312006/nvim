@@ -37,7 +37,7 @@ harpoon:extend({
 -- this part doesnt let you move around or remove snippers
 vim.keymap.set("n", "<C-h>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
-vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
+vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
 vim.keymap.set("n", "<C-n>", function() harpoon:list():select(1) end)

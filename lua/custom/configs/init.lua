@@ -13,10 +13,26 @@ require("custom.configs.hop")
 -- require("custom.configs.nordic")
 vim.cmd([[ hi SignColumn guibg=Normal]]) -- removes the shading from the side column ( major w )
 -- require('lspconfig').clangd.setup {}     -- lsp setup for clang? holy moly it worked
--- TODO: need to make sure the lsp things actually work, not sure if they do 
+-- TODO: need to make sure the lsp things actually work, not sure if they do
 local lspconfig = require("lspconfig")
 local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
-lspconfig.clangd.setup({ capabilities = lsp_capabilities })
 
+-- Function to check if the file type is .proto
+local function on_attach(client)
+  local filetype = vim.bo.filetype;
+  if filetype == "proto" then
+    client.stop()
+  end
+end
 
+-- Setup clangd with the custom on_attach function
+lspconfig.clangd.setup({
+  capabilities = lsp_capabilities,
+  on_attach = on_attach
+})
 
+lspconfig.clangd.setup({
+  capabilities = lsp_capabilities,
+  on_attach = on_attach
+
+})

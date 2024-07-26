@@ -33,6 +33,8 @@ for i = 1, 9 do
   vim.keymap.set("n", lhs, rhs, { desc = "Move to window " .. i })
 end
 
+vim.keymap.set("n", "<leader>lh", vim.lsp.inlay_hint.enable)
+
 
 -- [[Primeagen Keymaps]]
 

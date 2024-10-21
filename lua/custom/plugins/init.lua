@@ -125,7 +125,6 @@ return {
       require('refactoring').setup(config)
     end,
   },
-  'github.com/mbbill/undotree.git',
   {
     'lervag/vimtex',
     init = function()
@@ -140,6 +139,14 @@ return {
       require('render-markdown').setup {}
     end,
   },
+{
+  "jiaoshijie/undotree",
+  dependencies = "nvim-lua/plenary.nvim",
+  config = true,
+  keys = { -- load the plugin only when using it's keybinding:
+    { "<leader>u", "<cmd>lua require('undotree').toggle()<cr>" },
+  },
+},
   -- for hopping
   {
     'smoka7/hop.nvim',

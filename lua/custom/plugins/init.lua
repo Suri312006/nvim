@@ -113,4 +113,9 @@ return {
     version = '^5', -- Recommended
     lazy = false, -- This plugin is already lazy
   },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
+  'nvim-tree/nvim-web-devicons',
 }

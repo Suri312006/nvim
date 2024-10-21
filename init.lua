@@ -105,7 +105,6 @@ require 'lazy-bootstrap'
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
 
-require 'custom.plugins'
 require 'custom.configs'
 
 -- The line beneath this is called `modeline`. See `:help modeline`

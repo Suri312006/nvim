@@ -11,7 +11,7 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '<leader>f', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>f', ':Neotree reveal right<CR> ', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
@@ -20,6 +20,7 @@ return {
           ['<leader>f'] = 'close_window',
         },
       },
+      hijack_netrw_behavior = 'open_default',
     },
   },
 }
